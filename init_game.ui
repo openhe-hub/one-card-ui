@@ -31,11 +31,12 @@
    <property name="font">
     <font>
      <family>Times New Roman</family>
-     <italic>true</italic>
+     <pointsize>28</pointsize>
+     <italic>false</italic>
     </font>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-style:italic;&quot;&gt;I N I T&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:700;&quot;&gt;I N I T&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="back_btn">
@@ -157,8 +158,8 @@ QPushButton:pressed, QPushButton:checked {
   <widget class="QLabel" name="init_card_label">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>290</y>
+     <x>80</x>
+     <y>280</y>
      <width>191</width>
      <height>61</height>
     </rect>
@@ -177,7 +178,7 @@ QPushButton:pressed, QPushButton:checked {
    <property name="geometry">
     <rect>
      <x>530</x>
-     <y>280</y>
+     <y>290</y>
      <width>161</width>
      <height>61</height>
     </rect>
@@ -198,7 +199,7 @@ QPushButton:pressed, QPushButton:checked {
      <x>60</x>
      <y>450</y>
      <width>111</width>
-     <height>25</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="maximumSize">
@@ -210,12 +211,25 @@ QPushButton:pressed, QPushButton:checked {
    <property name="font">
     <font>
      <family>Consolas</family>
-     <pointsize>14</pointsize>
+     <pointsize>-1</pointsize>
      <italic>true</italic>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+     spacing: 8px;  
+	font-family:Consolas;
+	font-size:20px;
+	border-radius:2px;
+}
+
+QCheckBox::indicator {  
+        width: 15px; 
+        height: 15px;
+}</string>
+   </property>
    <property name="text">
-    <string>auto run</string>
+    <string>auto</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="log_check_btn">
@@ -224,8 +238,8 @@ QPushButton:pressed, QPushButton:checked {
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>450</y>
+     <x>60</x>
+     <y>500</y>
      <width>161</width>
      <height>25</height>
     </rect>
@@ -233,12 +247,24 @@ QPushButton:pressed, QPushButton:checked {
    <property name="font">
     <font>
      <family>Consolas</family>
-     <pointsize>14</pointsize>
+     <pointsize>-1</pointsize>
      <italic>true</italic>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+     spacing: 8px;  
+	font-family:Consolas;
+	font-size:20px;
+	border-radius:2px;
+}
+QCheckBox::indicator {  
+        width: 15px; 
+        height: 15px;
+}</string>
+   </property>
    <property name="text">
-    <string>enable logger</string>
+    <string>open logger</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
@@ -250,6 +276,35 @@ QPushButton:pressed, QPushButton:checked {
      <height>27</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background:transparent;
+    border:none;
+    border-bottom:1px solid black;
+}
+ 
+QLineEdit:hover{
+    border-bottom:1px solid rgb(193,193, 193);
+}
+ 
+QLineEdit:focus{
+    border-bottom:1px solid rgb(18, 183, 245);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>player num</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
@@ -260,25 +315,101 @@ QPushButton:pressed, QPushButton:checked {
      <height>27</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background:transparent;
+    border:none;
+    border-bottom:1px solid black;
+}
+ 
+QLineEdit:hover{
+    border-bottom:1px solid rgb(193,193, 193);
+}
+ 
+QLineEdit:focus{
+    border-bottom:1px solid rgb(18, 183, 245);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>init num</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
-     <x>750</x>
-     <y>160</y>
+     <x>740</x>
+     <y>150</y>
      <width>113</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background:transparent;
+    border:none;
+    border-bottom:1px solid black;
+}
+ 
+QLineEdit:hover{
+    border-bottom:1px solid rgb(193,193, 193);
+}
+ 
+QLineEdit:focus{
+    border-bottom:1px solid rgb(18, 183, 245);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>deck num</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
-     <x>750</x>
+     <x>740</x>
      <y>300</y>
      <width>113</width>
      <height>27</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+    background:transparent;
+    border:none;
+    border-bottom:1px solid black;
+}
+ 
+QLineEdit:hover{
+    border-bottom:1px solid rgb(193,193, 193);
+}
+ 
+QLineEdit:focus{
+    border-bottom:1px solid rgb(18, 183, 245);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>round num</string>
    </property>
   </widget>
   <widget class="QLabel" name="player_icon">
@@ -333,7 +464,7 @@ QPushButton:pressed, QPushButton:checked {
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>280</y>
+     <y>290</y>
      <width>51</width>
      <height>51</height>
     </rect>
