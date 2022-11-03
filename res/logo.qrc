@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>poker.png</file>
+    </qresource>
+</RCC>

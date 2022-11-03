@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1135</width>
+    <height>907</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>One Card</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>140</y>
+      <width>351</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>28</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;One Card Game&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="game_btn">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>410</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #e5ba79; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:15px; 
+	border-color: #8B7355;
+	font: bold 20px;
+	min-width:2em;
+	padding: 5px;
+	color: black;
+}
+ 
+QPushButton:hover
+{
+	background-color: #e5cda7;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #e5cda7; 
+	border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>New Game</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="intro_btn">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>410</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #8fc8ff; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:15px; 
+	border-color: #75bbff;
+	font: bold 20px;
+	min-width:2em;
+	padding: 5px;
+	color: black;
+}
+ 
+QPushButton:hover
+{
+	background-color: #d5ebe1;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #d5ebe1; 
+	border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Introduction</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="setting_btn">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>590</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #b2d66b; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:15px; 
+	border-color: #b0d667;
+	font: bold 20px;
+	min-width:2em;
+	padding: 5px;
+	color: black;
+}
+ 
+QPushButton:hover
+{
+	background-color: #c4d6a1;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #c4d6a1; 
+	border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="about_btn">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>590</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #cb7291; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:15px; 
+	border-color: #cb517c;
+	font: bold 20px;
+	min-width:2em;
+	padding: 5px;
+	color: black;
+}
+ 
+QPushButton:hover
+{
+	background-color: #cb90a5;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #cb90a5; 
+	border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="game_icon">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>420</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/games.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="intro_icon">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>420</y>
+      <width>58</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/intro.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="setting_icon">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>610</y>
+      <width>58</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/setting.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="about_icon">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>600</y>
+      <width>58</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>res/about.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1135</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
