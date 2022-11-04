@@ -159,7 +159,7 @@ QPushButton:pressed, QPushButton:checked {
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>280</y>
+     <y>290</y>
      <width>191</width>
      <height>61</height>
     </rect>
@@ -267,7 +267,7 @@ QCheckBox::indicator {
     <string>open logger</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="player_num_editor">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -306,7 +306,7 @@ QLineEdit:focus{
     <string>player num</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="init_card_num_editor">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -341,7 +341,7 @@ QLineEdit:focus{
     <string>init num</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="deck_num_editor">
    <property name="geometry">
     <rect>
      <x>740</x>
@@ -376,7 +376,7 @@ QLineEdit:focus{
     <string>deck num</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="round_num_editor">
    <property name="geometry">
     <rect>
      <x>740</x>

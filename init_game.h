@@ -15,6 +15,11 @@ public:
     explicit init_game(QWidget *parent = nullptr);
     ~init_game();
 
+private slots:
+    void on_back_btn_clicked();
+
+    void on_next_btn_clicked();
+
 private:
     Ui::init_game *ui;
 };

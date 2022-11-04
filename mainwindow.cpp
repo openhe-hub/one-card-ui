@@ -25,6 +25,7 @@ void MainWindow::on_game_btn_clicked()
 {
     init_game *game_initer=new init_game;
     game_initer->show();
+    close();
 }
 
 
@@ -32,5 +33,6 @@ void MainWindow::on_intro_btn_clicked()
 {
     introduction *intro=new introduction;
     intro->show();
+    close();
 }
 
